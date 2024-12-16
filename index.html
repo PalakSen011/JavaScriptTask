@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Header Section -->
+        <div class="header-container">
+            <div class="pagination">
+                <label for="pages">Show:</label>
+                <select name="page" id="pages">
+                </select>
+            </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="Search">
+                <button> <img src="./images/search-solid.svg" alt="search icon" style=" width:1rem"></button>
+            </div>
+        </div>
+        <!-- Content Section  -->
+        <div class="content-container">
+            <div class="content-section">
+
+                <!-- Post Table -->
+                <div class="post-container">
+                    <table class="styled-table">
+                        <thead>
+
+                            <tr>
+                                <th>UserID</th>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Body</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
+                </div>
+                <!--Adding post form  -->
+                <div class="add-post-container" style="display: none;">
+                    <button class="cross-btn" id="cross-btn"><img src="./images/delete.png" alt="cross button"
+                            style="width: 1rem;"></button>
+                    <div class="form-container">
+
+                        <form action="" class="edit-post" id="update-form">
+                            <input type="hidden" name="id" id="update-id">
+                            <label for="title">Title:</label>
+                            <input type="text" name="title" id="update-title">
+                            <label for="body">Body:</label>
+                            <input type="text" name="body" id="update-content">
+
+                            <button class="add-button" style="display: none;">ADD</button>
+                            <button class="edit-button" style="display: none;">EDIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="add-btn" id="btn-add">ADD POST</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
